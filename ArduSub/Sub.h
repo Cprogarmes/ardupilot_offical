@@ -98,6 +98,8 @@
 #include <AP_Scripting/AP_Scripting.h>
 #endif
 
+#include "AP_PhiKF.h"
+
 class Sub : public AP_Vehicle {
 public:
     friend class GCS_MAVLINK_Sub;
@@ -118,8 +120,10 @@ public:
     friend class ModeCircle;
     friend class ModeSurface;
     friend class ModeMotordetect;
-
+    friend class AP_PhiKF;
     Sub(void);
+
+    AP_PhiKF phikf_app;
 
 protected:
 

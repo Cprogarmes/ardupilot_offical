@@ -156,3 +156,8 @@ enum LoggingParameters {
 #define MAVLINK_SET_POS_TYPE_MASK_YAW_IGNORE      (1<<10)
 #define MAVLINK_SET_POS_TYPE_MASK_YAW_RATE_IGNORE (1<<11)
 
+// User Code
+#define USERHOOK_FASTLOOP  userhook_FastLoop();
+#define USERHOOK_INIT   sub.userhook_init();
+
+

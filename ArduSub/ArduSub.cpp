@@ -105,7 +105,8 @@ const AP_Scheduler::Task Sub::scheduler_tasks[] = {
     SCHED_TASK(stats_update,           1,    200,  76),
 #endif
 #ifdef USERHOOK_FASTLOOP
-    SCHED_TASK(userhook_FastLoop,    100,     75,  78),
+    // SCHED_TASK(userhook_FastLoop,    100,     75,  78),
+    SCHED_TASK(userhook_FastLoop,    100,     100,  78),
 #endif
 #ifdef USERHOOK_50HZLOOP
     SCHED_TASK(userhook_50Hz,         50,     75,  81),
